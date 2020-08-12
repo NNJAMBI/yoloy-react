@@ -1,0 +1,24 @@
+/* section 4 */
+.section-4{
+    background-image: url('../images/backgrounds/about.jpg');
+    background-size: cover;
+    padding-bottom: 70px;
+    padding-top: 80px;
+   }
+   .box-about{
+    width: 50%;
+    margin: auto;
+    font-size: 26px;
+    color: #ffffff;
+    border-right:2px solid #908361;
+    border-left:2px solid #908361;
+    border-bottom:2px solid #908361;
+   }
+   .abt-title{
+    margin-top: -10px;
+   }
+   .abt-top-border{
+    /* width: 40%;
+    float: left; */
+    border:1.5px solid #908361;
+   }

@@ -1,0 +1,42 @@
+/* section 1 */
+.section-1{
+    background-image: url('../images/backgrounds/hero.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-top: 44px;
+    color: #ffffff;
+   }
+   .menu-top{
+    font-size: 16px;
+   }
+   .menu-top ul{
+    display: inline-block;
+    list-style: none;
+   }
+   .menu-top ul li{
+    padding: 15px 20px;
+    float: left;
+   }
+   .title{
+    height: 464px;
+   }
+   .big-title{
+    font-size:60px;
+   }
+   .title-desc{
+    margin-top: 61px;
+    font-size: 18px;
+   }
+   .chevron-down{
+    margin-top: 3px;
+    margin-bottom: 100px;
+    font-size: 30px;
+   }
+   .chevron-down a{
+    color: #ffffff;
+    transition: all .3s ease-out;
+   }
+   .chevron-down a:hover{
+    color: #000000;
+   }
