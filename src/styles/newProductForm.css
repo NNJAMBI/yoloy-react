@@ -1,0 +1,94 @@
+/* New product form*/
+.product-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #eceffc;
+   }
+   .btn-ghost {
+    color: var(--btn-color);
+    background-color: transparent;
+    border-color: var(--btn-color);
+    transition: 0.3s;
+   }
+   .btn-ghost:hover {
+    color: #fff;
+    background: var(--btn-color);
+   }
+   .form-input-material {
+    --default-color: white !important;
+    --border-bottom-color: white !important;
+   }
+   .new-product-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 40px;
+    color: white;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0.4px 0.4px rgba(128, 128, 128, 0.109), 0 1px 1px rgba(128, 128, 128, 0.155), 0 2.1px 2.1px rgba(128, 128, 128, 0.195), 0 4.4px 4.4px rgba(128, 128, 128, 0.241), 0 12px 12px rgba(128, 128, 128, 0.35);
+   }
+   .new-product-form h1 {
+    margin: 0 0 24px 0;
+   }
+   .new-product-form .form-input-material {
+    margin: 12px 0;
+   }
+   .new-product-form .btn {
+    width: 100%;
+    margin: 18px 0 9px 0;
+   }
+   .form-input-material {
+    --default-color: rgba(0, 0, 0, 0.5);
+    --invalid-color: var(--danger-color);
+    --valid-color: var(--primary-color);
+    --border-bottom-color: rgba(0, 0, 0, 0.3);
+    position: relative;
+    border-bottom: 1px solid var(--border-bottom-color);
+   }
+   .form-input-material::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 2px;
+    background: var(--valid-color);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 0.3s;
+   }
+   .form-input-material:focus-within::before {
+    transform: scaleX(1);
+   }
+   .form-input-material label {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    transition: 0.3s;
+    transform-origin: left;
+   }
+   .form-input-material .form-control-material {
+    padding: 8px 0;
+    font-size: inherit;
+    font-weight: inherit;
+    color: currentColor;
+    background: 0 0;
+    border: none;
+    outline: 0;
+   }
+   .form-input-material .form-control-material:invalid ~ label {
+    color: var(--invalid-color);
+   }
+   .form-input-material .form-control-material:valid ~ label {
+    color: var(--valid-color);
+   }
+   .form-input-material .form-control-material:placeholder-shown ~ label {
+    color: var(--default-color);
+   }
+   .form-input-material .form-control-material:focus ~ label,
+   .form-input-material .form-control-material:not(:placeholder-shown) ~ label {
+    transform: translateY(-120%) scale(0.75);
+   }
