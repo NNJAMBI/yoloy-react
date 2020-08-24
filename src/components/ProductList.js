@@ -25,20 +25,21 @@ function ProductList(props) {
                 
             </div>
             {/* Product List */}
-            <div className="men-products">
-                <div className="row">
-                {props.productList.map((product) =>     //Loop through the product list passed down from ProductControl component
-                    <  Product  
-                    photo = {product.photo}
-                    name = {product.name}
-                    price = {product.price}
-                    id = {product.id}
-                    key= {product.id}/>
+           <div className="men-products">
+               <div className="row">
+               {props.productList.map((product) =>     //Loop through the product list passed down from ProductControl component
+                   <  Product 
+                   whenProductIsClicked = {props.onProductSelection} //new code
+                   photo = {product.photo}
+                   name = {product.name}
+                   price = {product.price}
+                   id = {product.id}
+                   key= {product.id}/>
 
-                )}
-                </div>
+               )}
+               </div>
 
-            </div>
+           </div>
 
         </div>
 
